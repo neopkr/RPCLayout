@@ -1,17 +1,13 @@
 '''
 This script was made by neokeee 2022.
-
 Easier Layout of Discord rich presence for API JSON.
-
 Author: @neokeee & @etherlesss
 Last Update: 20/03/22
 '''
 
 from datetime import datetime
-from platform import platform
 import requests as r
-import psutil, time, os
-from pypresence import Presence
+import psutil, time
 
 class RPCLayout():
     def timestamp(self):
