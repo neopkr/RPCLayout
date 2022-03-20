@@ -3,6 +3,13 @@
 A simple way to make a Discord rich presence with API using JSON parser to make it.
 Includes a multiple functions to help in the development with apis json
 
+# Installation
+Simple as possible use:
+```sh
+python -m pip install RPCLayout
+```
+or clone code and use at module.
+
 # Version 2.0.0
 Bugs fixed, import fixed for MacOS
 
