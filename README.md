@@ -22,6 +22,7 @@ Bugs fixed, import fixed for MacOS
     - _getpid() - Return the actual PID of the program
     - destroy() - Destroy the actual process and RPC.
     - Added more HTTP Responses Error for request_api() function
+
 See it in https://pypi.org/project/RPCLayout/2.0.1/
 # Repositories Used
 [pypresence](https://github.com/qwertyquerty/pypresence)
