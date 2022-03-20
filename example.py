@@ -26,7 +26,7 @@ layout = RPCLayout() # init class
 game_win32 = layout._detectGame('RotMG Exalt.exe') # Do exact for another OS
 game_macOS = layout._detectGame('RotMGExalt') # _detectGame returns a boolean, true if game is open, false is game is closed
 
-if game_win32 == True:
+if game_win32 is True or game_macOS is True:
     print("RPC Connected!")
     pass
 else:
