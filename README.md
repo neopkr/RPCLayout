@@ -1,5 +1,7 @@
 # RPCLayout
 
+![](https://cdn.discordapp.com/attachments/954499110763892807/955216312999739433/gato-digitando.gif)
+
 A simple way to make a Discord rich presence with API using JSON parser to make it.
 Includes a multiple functions to help in the development with apis json
 
