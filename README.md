@@ -6,9 +6,17 @@ Includes a multiple functions to help in the development with apis json
 # Version 2.0.0
 Bugs fixed, import fixed for MacOS
 
+# Version 2.0.1
++ Added:
+    - __test__ class for test functions.
+    - _system() - Return the operating system
+    - _getpid() - Return the actual PID of the program
+    - destroy() - Destroy the actual process and RPC.
+    - Added more HTTP Responses Error for request_api() function
+
 # Repositories Used
 [pypresence](https://github.com/qwertyquerty/pypresence)
 [RotMGRPC](https://github.com/neopkr/RotMGRPC)
 
 ## Requires:
-requests
+pip install requests

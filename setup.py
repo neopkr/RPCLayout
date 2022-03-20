@@ -5,7 +5,7 @@ with open('README.md', "r", encoding="utf-8") as fh:
     
 setuptools.setup(
     name="RPCLayout",
-    version="2.0.0",
+    version="2.0.1",
     author="neokeee",
     author_email="neopkr90@gmail.com",
     description="Simple template API for Discord rich presence!",
