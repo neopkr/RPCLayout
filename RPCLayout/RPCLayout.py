@@ -56,15 +56,18 @@ class RPCLayout():
         '''
         game = gameExe in (p.name() for p in psutil.process_iter())
         return game
-    def _waitingForOpen(self, game):
+    def _waitingForOpen(self, game = str):
         '''
-        :param bool game: game or program. Recieves boolean.
-        
+        :param str game: game or program. Recieves a string.
+    
         This function active a while loop with a time.sleep(2) until the game start.
         '''
         waitingGame = True
         while waitingGame:
-            if game is True:
+            if game is True or game is False:
+                print('Game cannot be a boolean!')
+                break
+            if self._detectGame(game) is True:
                 waitingGame = False
                 break
             time.sleep(2)

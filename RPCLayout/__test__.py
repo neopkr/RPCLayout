@@ -1,13 +1,13 @@
 import platform
 
 class __test__:
-    def callback_os(void):
+    def callback_os(functionA):
         '''
         :param def void:
         Detect operating system and do a function
         '''
         if platform.system() == "Windows":
-            void()
+            functionA
         elif platform.system() == "Darwin":
-            void()
+            functionA
     
