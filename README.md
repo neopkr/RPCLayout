@@ -5,6 +5,8 @@
 A simple way to make a Discord rich presence with API using JSON parser to make it.
 Includes a multiple functions to help in the development with apis json
 
+** RPCLayout Stop in Last Build v2.0.3, no more updates until 21/03/22. Reason: Making web for documentation. **
+
 # Installation
 Simple as possible use:
 ```sh
@@ -12,6 +14,18 @@ python -m pip install RPCLayout
 ```
 or clone code and use at module.
 # Versions - Stable
+### Version 2.0.3
+- Fixed _checkGameIsClosed(), now recieves a string. Usage:
+```python
+myGame = "CSGO.exe"
+while True: # main loop
+    if _checkGameIsClosed(myGame) is True: # if the Game is closed returns True
+        destroy(rpc, text="Game Exiting... RPC Disconnected.") # called destroy() function for destroy the rpc and process.
+    time.sleep(60) # loop 60 s (ideal 5 seconds)
+```
+
+See it in https://pypi.org/project/RPCLayout/2.0.3/
+
 ### Version 2.0.2
 - Fixed _waitingForGame() function, now recieve a string and complete the loop if found the game. Usage:
 ```python

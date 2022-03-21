@@ -9,4 +9,4 @@ __title__ = "RPCLayout"
 __author__ = "neokeee"
 __copyright__ = "Copyright 2022 neokeee"
 __license__ = 'MIT'
-__version__ = '2.0.2'
+__version__ = '2.0.3'

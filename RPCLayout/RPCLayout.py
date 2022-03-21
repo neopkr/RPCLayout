@@ -2,7 +2,7 @@
 This script was made by neokeee 2022.
 Easier Layout of Discord rich presence for API.JSON.
 Author: @neokeee & @etherlesss
-Last Update: 20/03/22
+Last Update: 21/03/22
 '''
 
 from datetime import datetime
@@ -97,11 +97,14 @@ class RPCLayout():
         return data
     def _checkGameIsClosed(self, game):
         '''
-        :param bool game: Game
+        :param str game: Game
         
         Returns a boolean when the game is closed.
         '''
-        if game is False:
+        if game is True or game is False:
+            print('Game cannot be a boolean!')
+            exit()
+        if self._detectGame(game) is False:
             return True
         else:
             pass
