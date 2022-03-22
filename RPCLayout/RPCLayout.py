@@ -7,7 +7,7 @@ Last Update: 21/03/22
 
 from datetime import datetime
 import requests as r
-import psutil, time, os, platform
+import psutil, time, os, platform, subprocess
 
 http_errors = {
     "error-response": "<Response [500]>",
@@ -26,7 +26,19 @@ def __http_response__(string, dict):
     print(string, dict)
     exit()
 
+# req for mac m1
+def isMac():
+    return platform.system() == "Darwin"
+
+def getProcessorMac():
+    return subprocess.check_output(['sysctl','-n','machdep.cpu.brand_string']).decode('utf-8')
+
+def isM1():
+    return getProcessorMac() == "Apple M1\n"
+
 class RPCLayout():
+    def _isM1():
+        return getProcessorMac() == "Apple M1\n"
     def _system(self):
         '''
         Return the operating system
@@ -35,6 +47,7 @@ class RPCLayout():
         if platform.system() == "Windows":
             return "Windows"
         elif platform.system() == "Darwin":
+            print(isM1())
             return "Darwin"
         
     def _getpid(self):

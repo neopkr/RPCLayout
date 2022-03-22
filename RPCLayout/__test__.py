@@ -7,7 +7,7 @@ class __test__:
         Detect operating system and do a function
         '''
         if platform.system() == "Windows":
-            functionA
+            functionA()
         elif platform.system() == "Darwin":
-            functionA
+            functionA()
     

@@ -14,6 +14,11 @@ python -m pip install RPCLayout
 ```
 or clone code and use at module.
 # Versions - Stable
+### Version 2.1.3
+- Added a functions to returns macs with m1 chip, use _system() or _isM1()
+Small changes in ```__test__```class.
+
+See it in https://pypi.org/project/RPCLayout/2.1.3/
 ### Version 2.0.3
 - Fixed _checkGameIsClosed(), now recieves a string. Usage:
 ```python
