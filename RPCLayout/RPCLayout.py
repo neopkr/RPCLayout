@@ -37,7 +37,7 @@ def isM1():
     return getProcessorMac() == "Apple M1\n"
 
 class RPCLayout():
-    def _isM1():
+    def _isM1(self):
         return getProcessorMac() == "Apple M1\n"
     def _system(self):
         '''
